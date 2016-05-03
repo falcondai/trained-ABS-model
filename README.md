@@ -52,7 +52,7 @@ presented in the paper):
 ## extra notes
 
 I trained the model with the default hyperparameters but some of the
-default hyperparameters, as pointed in [this issue](https://github.com/facebook/NAMAS/issues/8), do not match the ones
+default hyperparameters, as pointed out in [this issue](https://github.com/facebook/NAMAS/issues/8), do not match the ones
 presented in the paper.
 
 ## reference
