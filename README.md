@@ -5,11 +5,8 @@ and [code](https://github.com/facebook/NAMAS)
 
 ## usage
 
-I used Github LFS (Large File Service) to store the large model binary:
-it is pretty awesome!
-
-So you need to install [Git LFS](https://git-lfs.github.com/) and then just
-clone the repo.
+Due to the low usage limit on Github LFS (Large File Service), I have switched
+to Google Drive to distribute the trained torch model: [download](https://drive.google.com/open?id=0Bx73xeahAckPN0gyMXVMRC1aMlU)
 
 To evaluate the model, clone the NAMAS repo (mine or the original) and run the `test_model.sh` script:
 ```bash

@@ -1,2 +1,0 @@
-abs-model.th filter=lfs diff=lfs merge=lfs -text
-*.th filter=lfs diff=lfs merge=lfs -text
