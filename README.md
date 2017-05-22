@@ -5,15 +5,21 @@ and [code](https://github.com/facebook/NAMAS)
 
 ## usage
 
-Due to the low usage limit on Github LFS (Large File Service), I have switched
-to Google Drive to distribute the trained torch model: [download](https://drive.google.com/open?id=0Bx73xeahAckPN0gyMXVMRC1aMlU)
+Consider to use [`nvidia-docker`](https://github.com/NVIDIA/nvidia-docker) with
+the image `falcondai/abs` (built from `Dockerfile` in the repo) which contains all the dependencies needed: `docker pull falcondai/abs`
 
-To evaluate the model, clone the NAMAS repo (mine or the original) and run the `test_model.sh` script:
+To evaluate the trained model,
+
+0. download the trained model file from [Google drive](https://drive.google.com/open?id=0Bx73xeahAckPN0gyMXVMRC1aMlU)
+1. clone my [fork](https://github.com/falcondai/NAMAS) of the NAMAS repo (which contains minor changes over the original):
+```bash
+git clone github.com/falcondai/NAMAS
+```
+2. put the downloaded model file to the project root (next to `test_model.sh`)
+3. run the `test_model.sh` script (which generates 10-word-long summaries):
 ```bash
 ./test_model.sh paper-example.article.txt abs-model.th 10
 ```
-
-Consult the original repo for more instructions.
 
 ## how this model was trained
 
